@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abhik.mbti.MBTI_info"
+
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="THE MBTI TEST"
+            android:id="@+id/tv_header"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take our Personality Test and get a 'freakishly accurate' description of who you are and why you do things the way you do."
+            android:layout_gravity="center"
+            android:id="@+id/tv_detail"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:textSize="25dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TAKE THE TEST"
+            android:id="@+id/btn_test"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1010504642810",
+    "firebase_url": "https://mbti-da6a2.firebaseio.com",
+    "project_id": "mbti-da6a2",
+    "storage_bucket": "mbti-da6a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010504642810:android:b97356351e63bc66",
+        "android_client_info": {
+          "package_name": "com.example.abhik.mbti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010504642810-gn3nqtl8kvlk7kkscit5g6ajtqveqsob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhik.mbti",
+            "certificate_hash": "6ba65b4949b0ddf1694773a87f4b89223d65b586"
+          }
+        },
+        {
+          "client_id": "1010504642810-kulpc6rajchrg4ccb741t6pd4h01d4of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ZZ1tV9A3Mi-7vpfkCUwJ9-ERK7R-2lY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010504642810-kulpc6rajchrg4ccb741t6pd4h01d4of.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

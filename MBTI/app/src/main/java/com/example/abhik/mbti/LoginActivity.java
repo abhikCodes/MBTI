@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_SHORT).show();
                                 }
                             }else{
-                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                startActivity(new Intent(LoginActivity.this, MBTI_info.class));
                                 finish();
                             }
                         }

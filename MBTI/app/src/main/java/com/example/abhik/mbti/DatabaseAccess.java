@@ -21,6 +21,8 @@ public class DatabaseAccess {
         this.openHelper = new DatabaseOpenHelper(context);
     }
 
+
+
     public static DatabaseAccess getInstance(MBTIquestionarre context){
         if(instance == null){
             instance = new DatabaseAccess(context);
@@ -40,7 +42,7 @@ public class DatabaseAccess {
 
     public List<String> getQuestion(){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT Question FROM MBTI" , null);
+        Cursor cursor = database.rawQuery("SELECT Question FROM Questions" , null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));
@@ -52,7 +54,7 @@ public class DatabaseAccess {
 
     public List<Integer> getID() {
         List<Integer> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT ID FROM MBTI" , null);
+        Cursor cursor = database.rawQuery("SELECT ID FROM Questions" , null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getInt(0));
@@ -64,7 +66,7 @@ public class DatabaseAccess {
 
     public List<String> getOptionA(){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT OptionA FROM MBTI" , null);
+        Cursor cursor = database.rawQuery("SELECT OptionA FROM Questions" , null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));
@@ -76,7 +78,7 @@ public class DatabaseAccess {
 
     public List<String> getOptionB(){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT OptionB FROM MBTI" , null);
+        Cursor cursor = database.rawQuery("SELECT OptionB FROM Questions" , null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));

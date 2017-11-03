@@ -1,6 +1,7 @@
 package com.example.abhik.mbti;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
@@ -11,8 +12,22 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 public class DatabaseOpenHelper extends SQLiteAssetHelper{
     private static final String DATABASE_NAME = "MBTI.db";
     private static final int DATABASE_VERSION = 1;
+//    Context context;
+//    PlaceholderFragment fragment = new PlaceholderFragment();
 
-    public DatabaseOpenHelper(Context context) {
+//    public DatabaseOpenHelper(Context context) {
+//        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+////        context = fragment.getActivity();
+//    }
+
+
+
+    public DatabaseOpenHelper(MBTIquestionarre context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
+
     }
+
+
 }

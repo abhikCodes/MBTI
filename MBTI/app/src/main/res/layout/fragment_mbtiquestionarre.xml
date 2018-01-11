@@ -32,28 +32,42 @@
             android:textSize="30sp" />
     </LinearLayout>
 
-
-    <RadioButton
-        android:id="@+id/rb_choice1"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/section_label"
-        android:layout_marginTop="62dp"
-        android:text="RadioButton"
-        android:hint="Option1"
-        android:textSize="20sp"/>
+        android:id="@+id/radio_grp"
+        android:layout_marginTop="62dp">
 
-    <RadioButton
-        android:id="@+id/rb_choice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/section_label"
-        android:layout_marginTop="32dp"
-        android:text="RadioButton"
-        android:hint="Option2"
-        android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/section_label"
+            android:text="RadioButton"
+            android:hint="Option1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/section_label"
+            android:layout_marginTop="32dp"
+            android:text="RadioButton"
+            android:hint="Option2"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--<RadioGroup-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!---->
+    <!--</RadioGroup>-->
 
 
     <LinearLayout

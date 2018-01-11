@@ -2,12 +2,14 @@ package com.example.abhik.mbti;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -83,6 +85,10 @@ public class PlaceholderFragment extends Fragment {
         TextView tv2 = (TextView) rootView.findViewById(R.id.tv_section_label);
         RadioButton rb1 = (RadioButton) rootView.findViewById(R.id.rb_choice1);
         RadioButton rb2 = (RadioButton) rootView.findViewById(R.id.rb_choice2);
+
+
+        RadioGroup radioGroup = (RadioGroup) rootView.findViewById(R.id.radio_grp);
+
         Bundle args = getArguments();
         int x =args.getInt(ARG_SECTION_NUMBER);
         Log.d("don", "onCreateView: "+x);
@@ -129,6 +135,22 @@ public class PlaceholderFragment extends Fragment {
         Log.d(TAG, "onCreateView: "+args.getInt("page_position"));
 
 
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+
+                if (i == R.id.rb_choice1){
+
+                }
+                else if(i == R.id.rb_choice2){
+
+                }
+                else {
+
+                }
+            }
+        });
 
         return rootView;
     }
